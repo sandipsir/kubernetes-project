@@ -9,5 +9,5 @@ WORKDIR /var/www/html
 RUN unzip beauty.zip
 RUN cp -rvf templatemo_519_beauty/* .
 RUN rm -rf templatemo_519_beauty beauty.zip
-CMD ["/usr/sbin/httpd", "-D",  "FOREGROUND"]
+CMD ["/usr/sbin/apache2", "-D",  "FOREGROUND"]
 EXPOSE 80
